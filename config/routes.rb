@@ -1,3 +1,6 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  root to: "application#index"
+  get "error", to: "application#error"
+  get "authorize", to: "application#authorize"
+  get "callback", to: "application#callback"
 end

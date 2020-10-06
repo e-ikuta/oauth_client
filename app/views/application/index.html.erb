@@ -1,0 +1,6 @@
+<h1>Oauth Client</h1>
+<p>[Access token value] : <%= @access_token %></p>
+<p>[Scope value] : <%= @scope %></p>
+<p>[Refresh token value] : <%= @refresh_token %></p>
+
+<%= button_to "Get Oauth Token", authorize_path, method: :get %>
